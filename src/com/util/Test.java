@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Test {
     public static void main(String[] args) {
         Test t = new Test();
-        t.threenumscompare3();
+        t.charAtDemo();
     }
     public void maopaosort() {
         int arr[] = {6, 5, 9, 3, 1, 46};
@@ -66,6 +66,13 @@ public class Test {
         }*/
         for (int num: array) {
             System.out.println(num);
+        }
+    }
+    public void charAtDemo(){
+        String s = "hello world";
+        for (int i = 0; i <s.length() ; i++) {
+            char c = s.charAt(i);
+            System.out.println("第"+i+"个是："+c);
         }
     }
 }

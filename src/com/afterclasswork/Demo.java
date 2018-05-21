@@ -6,12 +6,12 @@ import com.stack.SqStack;
 public class Demo {
 
     //编写一个函数，要求借助一个栈把一个数组中的元素逆置
-    public void reverse(Object[] a) throws Exception{
+    public void reverse(Object[] a) throws Exception {
         SqStack sqStack = new SqStack(a.length);
-        for (int i = 0; i <a.length ; i++) {
+        for (int i = 0; i < a.length; i++) {
             sqStack.push(a[i]);
         }
-        for (int i = 0; i <a.length ; i++) {
+        for (int i = 0; i < a.length; i++) {
             a[i] = sqStack.pop();
         }
     }
@@ -21,15 +21,17 @@ public class Demo {
     public boolean isPalindSeq(String str) throws Exception {
         LinkStack linkStack = new LinkStack();
         int i = 0;
-        for (; i <str.length() ; i++) {
+        for (; i < str.length(); i++) {
             linkStack.push(str.charAt(i));
         }
-        for (i = 0; i <str.length() ; i++) {
-            char c = ((Character)linkStack.pop()).charValue();
-            if(c!=str.charAt(i)){
+        for (i = 0; i < str.length(); i++) {
+            char c = ((Character) linkStack.pop()).charValue();
+            if (c != str.charAt(i)) {
                 return false;
             }
-            return true;
+
         }
+        return true;
     }
 }
+
