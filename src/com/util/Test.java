@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class Test {
     public static void main(String[] args) {
         Test t = new Test();
-        t.charAtDemo();
+        t.celiang();
     }
     public void maopaosort() {
-        int arr[] = {6, 5, 9, 3, 1, 46};
+        int arr[] = {6, 5, 9, 3, 1, 46,89,99,100,2000,300,301};
         System.out.println("排序前的数组为：");
         for (int num : arr) {
             System.out.print(num + " ");
@@ -23,7 +23,6 @@ public class Test {
                 }
             }
         }
-        System.out.println("------------------------------------------");
         System.out.println("排序后的数组为：");
         for (int num : arr) {
             System.out.print(num + " ");
@@ -74,5 +73,16 @@ public class Test {
             char c = s.charAt(i);
             System.out.println("第"+i+"个是："+c);
         }
+    }
+    //除了3的倍数以外的数的和
+    public void chusanbeishu(){
+        int sum = 0;
+        for (int i = 1; i <=100 ; i++) {
+            if (i%3 != 0){
+                sum+=i;
+               /* System.out.println(i);*/
+            }
+        }
+        System.out.println(sum);
     }
 }

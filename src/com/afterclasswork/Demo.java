@@ -29,7 +29,6 @@ public class Demo {
             if (c != str.charAt(i)) {
                 return false;
             }
-
         }
         return true;
     }
