@@ -74,7 +74,7 @@ public class Test {
             System.out.println("第"+i+"个是："+c);
         }
     }
-    //除了3的倍数以外的数的和
+    //除了3的倍数以外的数的和  111111111
     public void chusanbeishu(){
         int sum = 0;
         for (int i = 1; i <=100 ; i++) {
